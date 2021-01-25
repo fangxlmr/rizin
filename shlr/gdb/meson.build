@@ -26,7 +26,6 @@ librzgdb = static_library('r2gdb', gdb_files,
   include_directories: gdb_inc,
   dependencies: [rz_util_dep, rz_cons_dep, rz_socket_dep],
   implicit_include_directories: false,
-  pic: true,
 )
 
 gdb_dep = declare_dependency(
